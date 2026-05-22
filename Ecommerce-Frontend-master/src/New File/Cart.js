@@ -7,7 +7,7 @@ function Cart() {
   const userId = localStorage.getItem("userId");
 
   const fetchCart = useCallback(() => {
-    fetch(`https://ecommerce-spring-boot-api.onrender.com/api/cart/${userId}`)
+    fetch(`https://ecommerce-spring-boot-api-rfjw.onrender.com/api/cart/${userId}`)
       .then(res => res.json())
       .then(data => setCartItems(data))
       .catch(err => console.log(err));
@@ -22,7 +22,7 @@ function Cart() {
   }, [userId, navigate, fetchCart]);
 
   const removeFromCart = (productId) => {
-    fetch(`https://ecommerce-spring-boot-api.onrender.com/api/cart/remove/${userId}/${productId}`, {
+    fetch(`https://ecommerce-spring-boot-api-rfjw.onrender.com/api/cart/remove/${userId}/${productId}`, {
       method: "DELETE"
     })
       .then(() => fetchCart())

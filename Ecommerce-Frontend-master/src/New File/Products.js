@@ -14,7 +14,7 @@ function Products() {
             return;
         }
 
-        fetch("https://ecommerce-spring-boot-api.onrender.com/api/cart/add", {
+        fetch("https://ecommerce-spring-boot-api-rfjw.onrender.com/api/cart/add", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -34,12 +34,12 @@ function Products() {
         const cat = searchParams.get('category');
         const searchQuery = searchParams.get('search');
 
-        let url = "https://ecommerce-spring-boot-api.onrender.com/api/products";
+        let url = "https://ecommerce-spring-boot-api-rfjw.onrender.com/api/products";
 
         if (cat) {
-            url = `https://ecommerce-spring-boot-api.onrender.com/api/products/category/${cat}`;
+            url = `https://ecommerce-spring-boot-api-rfjw.onrender.com/api/products/category/${cat}`;
         } else if (searchQuery) {
-            url = `https://ecommerce-spring-boot-api.onrender.com/api/products/search?name=${searchQuery}`;
+            url = `https://ecommerce-spring-boot-api-rfjw.onrender.com/api/products/search?name=${searchQuery}`;
         }
 
         fetch(url)

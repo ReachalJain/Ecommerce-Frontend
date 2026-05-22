@@ -11,7 +11,7 @@ function ProductDetail() {
     }
 
     useEffect(() => {
-        fetch(`https://ecommerce-spring-boot-api.onrender.com/api/products/${id}`)
+        fetch(`https://ecommerce-spring-boot-api-rfjw.onrender.com/api/products/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
             .catch(err => console.log(err));

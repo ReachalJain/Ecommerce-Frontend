@@ -8,7 +8,7 @@ function Login() {
   const navigate = useNavigate();
 
  const handleLogin = () => {
-    fetch("https://ecommerce-spring-boot-api.onrender.com/api/auth/login", {
+    fetch("https://ecommerce-spring-boot-api-rfjw.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })

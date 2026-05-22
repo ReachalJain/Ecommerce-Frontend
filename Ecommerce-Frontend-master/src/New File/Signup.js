@@ -10,7 +10,7 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = () => {
-    fetch("https://ecommerce-spring-boot-api.onrender.com/api/auth/signup", {
+    fetch("https://ecommerce-spring-boot-api-rfjw.onrender.com/api/auth/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password })
